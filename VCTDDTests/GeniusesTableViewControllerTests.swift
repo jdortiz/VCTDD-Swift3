@@ -21,6 +21,7 @@ class GeniusesTableViewControllerTests: XCTestCase {
     // MARK: - Test vatiables.
 
     var sut: GeniusesTableViewController!
+    var presenter: GeniusesListPresenterMock!
 
 
     // MARK: - Set up and tear down.
@@ -33,6 +34,7 @@ class GeniusesTableViewControllerTests: XCTestCase {
     func createSut() {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: GeniusesTableViewController.ID) as! GeniusesTableViewController
+        presenter = GeniusesListPresenterMock()
     }
 
 
@@ -44,6 +46,7 @@ class GeniusesTableViewControllerTests: XCTestCase {
 
     func releaseSut() {
         sut = nil
+        presenter = nil
     }
 
 
@@ -53,8 +56,25 @@ class GeniusesTableViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut, "Sut must not be nil.")
     }
 
+    func testViewDidLoadInvokesViewReadyEvent() {
+        // Arrange
+        sut.presenter = presenter
+
+        // Act
+        _ = sut.view
+
+        // Assert
+        XCTAssertTrue(presenter.isViewReadyInvoked)
+    }
+    
 
     // MARK: - Stubs & Mocks.
 
-
+    class GeniusesListPresenterMock: GeniusesListPresenter {
+        var isViewReadyInvoked = false
+        
+        override func viewReady() {
+            isViewReadyInvoked = true
+        }
+    }
 }

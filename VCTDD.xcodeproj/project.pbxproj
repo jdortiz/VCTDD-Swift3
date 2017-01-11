@@ -14,6 +14,7 @@
 		CFAA59D31E263EA90032BCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */; };
 		CFAA59F31E26464A0032BCCF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F21E26464A0032BCCF /* README.md */; };
 		CFAA59F91E2651410032BCCF /* GeniusesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */; };
+		CFAA59FB1E2653350032BCCF /* GeniusesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59FA1E2653350032BCCF /* GeniusesListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		CFAA59F21E26464A0032BCCF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CFAA59F71E2651400032BCCF /* VCTDDTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCTDDTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		CFAA59FA1E2653350032BCCF /* GeniusesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		CFAA59EE1E263F100032BCCF /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA59FA1E2653350032BCCF /* GeniusesListPresenter.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAA59F31E26464A0032BCCF /* README.md in Sources */,
+				CFAA59FB1E2653350032BCCF /* GeniusesListPresenter.swift in Sources */,
 				CFAA59CB1E263EA90032BCCF /* GeniusesTableViewController.swift in Sources */,
 				CFAA59C91E263EA90032BCCF /* AppDelegate.swift in Sources */,
 			);

@@ -14,9 +14,14 @@ class GeniusesTableViewController: UITableViewController {
 
     static let ID = "GeniusesTableViewController"
 
+    // MARK: - Instance variables
+    
+    var presenter: GeniusesListPresenter?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        presenter?.viewReady()
     }
 
     override func didReceiveMemoryWarning() {
