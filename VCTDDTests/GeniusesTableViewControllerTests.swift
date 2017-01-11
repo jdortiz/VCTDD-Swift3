@@ -95,12 +95,25 @@ class GeniusesTableViewControllerTests: XCTestCase {
         XCTAssertEqual(0, rows)
     }
 
+    func testPresenterConfiguresCellView() {
+        // Arrange
+        sut.presenter = presenter
+        presenter.totalGeniuses = 1
+
+        // Act
+        _ = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
+
+        // Assert
+        XCTAssertTrue(presenter.isConfigureCellInvoked)
+    }
     
+
     // MARK: - Stubs & Mocks.
 
     class GeniusesListPresenterMock: GeniusesListPresenter {
         var isViewReadyInvoked = false
         var totalGeniuses: Int?
+        var isConfigureCellInvoked = false
 
         override func viewReady() {
             isViewReadyInvoked = true
@@ -108,6 +121,10 @@ class GeniusesTableViewControllerTests: XCTestCase {
         
         override func numberOfGeniuses() -> Int {
             return totalGeniuses ?? 0
+        }
+
+        override func configure(cell: GeniusTableViewCell, forRow row: Int) {
+            isConfigureCellInvoked = true
         }
     }
 }
