@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CFAA59C91E263EA90032BCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59C81E263EA90032BCCF /* AppDelegate.swift */; };
-		CFAA59CB1E263EA90032BCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59CA1E263EA90032BCCF /* ViewController.swift */; };
+		CFAA59CB1E263EA90032BCCF /* GeniusesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59CA1E263EA90032BCCF /* GeniusesTableViewController.swift */; };
 		CFAA59CE1E263EA90032BCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59CC1E263EA90032BCCF /* Main.storyboard */; };
 		CFAA59D01E263EA90032BCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59CF1E263EA90032BCCF /* Assets.xcassets */; };
 		CFAA59D31E263EA90032BCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */; };
-		CFAA59DE1E263EA90032BCCF /* VCTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59DD1E263EA90032BCCF /* VCTDDTests.swift */; };
+		CFAA59F31E26464A0032BCCF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F21E26464A0032BCCF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		CFAA59C51E263EA90032BCCF /* VCTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAA59C81E263EA90032BCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFAA59CA1E263EA90032BCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFAA59CA1E263EA90032BCCF /* GeniusesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewController.swift; sourceTree = "<group>"; };
 		CFAA59CD1E263EA90032BCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFAA59CF1E263EA90032BCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFAA59D21E263EA90032BCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAA59D41E263EA90032BCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFAA59D91E263EA90032BCCF /* VCTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFAA59DD1E263EA90032BCCF /* VCTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTDDTests.swift; sourceTree = "<group>"; };
 		CFAA59DF1E263EA90032BCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAA59F21E26464A0032BCCF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,7 @@
 		CFAA59BC1E263EA80032BCCF = {
 			isa = PBXGroup;
 			children = (
+				CFAA59F21E26464A0032BCCF /* README.md */,
 				CFAA59C71E263EA90032BCCF /* VCTDD */,
 				CFAA59DC1E263EA90032BCCF /* VCTDDTests */,
 				CFAA59C61E263EA90032BCCF /* Products */,
@@ -77,12 +78,11 @@
 		CFAA59C71E263EA90032BCCF /* VCTDD */ = {
 			isa = PBXGroup;
 			children = (
-				CFAA59C81E263EA90032BCCF /* AppDelegate.swift */,
-				CFAA59CA1E263EA90032BCCF /* ViewController.swift */,
-				CFAA59CC1E263EA90032BCCF /* Main.storyboard */,
-				CFAA59CF1E263EA90032BCCF /* Assets.xcassets */,
-				CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */,
-				CFAA59D41E263EA90032BCCF /* Info.plist */,
+				CFAA59EA1E263EE40032BCCF /* Views */,
+				CFAA59EE1E263F100032BCCF /* Presenters */,
+				CFAA59F11E263F320032BCCF /* Model */,
+				CFAA59E81E263EBB0032BCCF /* AppDelegate */,
+				CFAA59EB1E263EF30032BCCF /* SupportFiles */,
 			);
 			path = VCTDD;
 			sourceTree = "<group>";
@@ -90,10 +90,90 @@
 		CFAA59DC1E263EA90032BCCF /* VCTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				CFAA59DD1E263EA90032BCCF /* VCTDDTests.swift */,
-				CFAA59DF1E263EA90032BCCF /* Info.plist */,
+				CFAA59ED1E263F090032BCCF /* Views */,
+				CFAA59EF1E263F1D0032BCCF /* Presenters */,
+				CFAA59F01E263F2D0032BCCF /* Model */,
+				CFAA59E91E263ED10032BCCF /* AppDelegate */,
+				CFAA59EC1E263F020032BCCF /* SupportFiles */,
 			);
 			path = VCTDDTests;
+			sourceTree = "<group>";
+		};
+		CFAA59E81E263EBB0032BCCF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CFAA59C81E263EA90032BCCF /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CFAA59E91E263ED10032BCCF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CFAA59EA1E263EE40032BCCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFAA59CA1E263EA90032BCCF /* GeniusesTableViewController.swift */,
+				CFAA59CC1E263EA90032BCCF /* Main.storyboard */,
+				CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CFAA59EB1E263EF30032BCCF /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CFAA59CF1E263EA90032BCCF /* Assets.xcassets */,
+				CFAA59D41E263EA90032BCCF /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CFAA59EC1E263F020032BCCF /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CFAA59DF1E263EA90032BCCF /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CFAA59ED1E263F090032BCCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CFAA59EE1E263F100032BCCF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CFAA59EF1E263F1D0032BCCF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CFAA59F01E263F2D0032BCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CFAA59F11E263F320032BCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAA59CB1E263EA90032BCCF /* ViewController.swift in Sources */,
+				CFAA59F31E26464A0032BCCF /* README.md in Sources */,
+				CFAA59CB1E263EA90032BCCF /* GeniusesTableViewController.swift in Sources */,
 				CFAA59C91E263EA90032BCCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAA59DE1E263EA90032BCCF /* VCTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
