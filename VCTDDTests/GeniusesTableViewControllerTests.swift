@@ -36,7 +36,7 @@ class GeniusesTableViewControllerTests: XCTestCase {
     func createSut() {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: GeniusesTableViewController.ID) as! GeniusesTableViewController
-        presenter = GeniusesListPresenterMock()
+        presenter = GeniusesListPresenterMock(model: GeniusesModel())
     }
 
 

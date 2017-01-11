@@ -10,11 +10,19 @@ import UIKit
 
 
 class GeniusTableViewCell: UITableViewCell {
+    
+    // MARK: - Instance variables
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var skillLabel: UILabel!
+    
+    // MARK: - Display orders
+
     func display(name: String) {
-        textLabel?.text = name
+        nameLabel?.text = name
     }
     
     func display(skill: String) {
-        detailTextLabel?.text = skill
+        skillLabel?.text = skill
     }
 }

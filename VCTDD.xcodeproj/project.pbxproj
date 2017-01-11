@@ -16,6 +16,10 @@
 		CFAA59F91E2651410032BCCF /* GeniusesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */; };
 		CFAA59FB1E2653350032BCCF /* GeniusesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59FA1E2653350032BCCF /* GeniusesListPresenter.swift */; };
 		CFAA59FD1E265F950032BCCF /* GeniusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59FC1E265F950032BCCF /* GeniusTableViewCell.swift */; };
+		CFAA59FF1E266AF60032BCCF /* GeniusesListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59FE1E266AF60032BCCF /* GeniusesListPresenterTests.swift */; };
+		CFAA5A011E266BBF0032BCCF /* GeniusesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5A001E266BBF0032BCCF /* GeniusesModel.swift */; };
+		CFAA5A031E266D5A0032BCCF /* GeniusesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5A021E266D5A0032BCCF /* GeniusesTableViewCellTests.swift */; };
+		CFAA5A051E267E310032BCCF /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5A041E267E310032BCCF /* AppDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewControllerTests.swift; sourceTree = "<group>"; };
 		CFAA59FA1E2653350032BCCF /* GeniusesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesListPresenter.swift; sourceTree = "<group>"; };
 		CFAA59FC1E265F950032BCCF /* GeniusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusTableViewCell.swift; sourceTree = "<group>"; };
+		CFAA59FE1E266AF60032BCCF /* GeniusesListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesListPresenterTests.swift; sourceTree = "<group>"; };
+		CFAA5A001E266BBF0032BCCF /* GeniusesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesModel.swift; sourceTree = "<group>"; };
+		CFAA5A021E266D5A0032BCCF /* GeniusesTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewCellTests.swift; sourceTree = "<group>"; };
+		CFAA5A041E267E310032BCCF /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		CFAA59E91E263ED10032BCCF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA5A041E267E310032BCCF /* AppDelegateTests.swift */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -125,9 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				CFAA59CA1E263EA90032BCCF /* GeniusesTableViewController.swift */,
+				CFAA59FC1E265F950032BCCF /* GeniusTableViewCell.swift */,
 				CFAA59CC1E263EA90032BCCF /* Main.storyboard */,
 				CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */,
-				CFAA59FC1E265F950032BCCF /* GeniusTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */,
+				CFAA5A021E266D5A0032BCCF /* GeniusesTableViewCellTests.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -169,6 +179,7 @@
 		CFAA59EF1E263F1D0032BCCF /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA59FE1E266AF60032BCCF /* GeniusesListPresenterTests.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 		CFAA59F11E263F320032BCCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA5A001E266BBF0032BCCF /* GeniusesModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -297,6 +309,7 @@
 				CFAA59FB1E2653350032BCCF /* GeniusesListPresenter.swift in Sources */,
 				CFAA59CB1E263EA90032BCCF /* GeniusesTableViewController.swift in Sources */,
 				CFAA59C91E263EA90032BCCF /* AppDelegate.swift in Sources */,
+				CFAA5A011E266BBF0032BCCF /* GeniusesModel.swift in Sources */,
 				CFAA59FD1E265F950032BCCF /* GeniusTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAA5A051E267E310032BCCF /* AppDelegateTests.swift in Sources */,
+				CFAA5A031E266D5A0032BCCF /* GeniusesTableViewCellTests.swift in Sources */,
 				CFAA59F91E2651410032BCCF /* GeniusesTableViewControllerTests.swift in Sources */,
+				CFAA59FF1E266AF60032BCCF /* GeniusesListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

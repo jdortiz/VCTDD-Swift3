@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,36 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ghr-I2-9rv" id="LSW-ne-RrH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0d-WV-HtX">
+                                            <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-0d-Z5J">
+                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="27.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Skill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tx-CL-5vk">
+                                                    <rect key="frame" x="331" y="0.0" width="28" height="27.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="u0d-WV-HtX" firstAttribute="leading" secondItem="LSW-ne-RrH" secondAttribute="leadingMargin" id="HTq-2n-WqF"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="u0d-WV-HtX" secondAttribute="bottom" id="VRF-SC-KCC"/>
+                                        <constraint firstItem="u0d-WV-HtX" firstAttribute="top" secondItem="LSW-ne-RrH" secondAttribute="topMargin" id="XA4-Fc-98H"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="u0d-WV-HtX" secondAttribute="trailing" id="sBy-VW-iha"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="8Xf-0d-Z5J" id="ApZ-ui-qWt"/>
+                                    <outlet property="skillLabel" destination="0Tx-CL-5vk" id="37s-rT-0LW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
