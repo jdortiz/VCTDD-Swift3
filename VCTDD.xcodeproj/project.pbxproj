@@ -13,6 +13,7 @@
 		CFAA59D01E263EA90032BCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59CF1E263EA90032BCCF /* Assets.xcassets */; };
 		CFAA59D31E263EA90032BCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAA59D11E263EA90032BCCF /* LaunchScreen.storyboard */; };
 		CFAA59F31E26464A0032BCCF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F21E26464A0032BCCF /* README.md */; };
+		CFAA59F91E2651410032BCCF /* GeniusesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		CFAA59D91E263EA90032BCCF /* VCTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAA59DF1E263EA90032BCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFAA59F21E26464A0032BCCF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CFAA59F71E2651400032BCCF /* VCTDDTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCTDDTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 		CFAA59EC1E263F020032BCCF /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA59F71E2651400032BCCF /* VCTDDTests-Bridging-Header.h */,
 				CFAA59DF1E263EA90032BCCF /* Info.plist */,
 			);
 			name = SupportFiles;
@@ -144,6 +148,7 @@
 		CFAA59ED1E263F090032BCCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CFAA59F81E2651410032BCCF /* GeniusesTableViewControllerTests.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 					CFAA59D81E263EA90032BCCF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 324YCFLY7B;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CFAA59C41E263EA90032BCCF;
 					};
@@ -291,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAA59F91E2651410032BCCF /* GeniusesTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,11 +453,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				INFOPLIST_FILE = VCTDDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canonicalexamples.VCTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VCTDDTests/VCTDDTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCTDD.app/VCTDD";
 			};
@@ -461,11 +471,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 324YCFLY7B;
 				INFOPLIST_FILE = VCTDDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canonicalexamples.VCTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VCTDDTests/VCTDDTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCTDD.app/VCTDD";
 			};
@@ -490,6 +502,7 @@
 				CFAA59E41E263EA90032BCCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFAA59E51E263EA90032BCCF /* Build configuration list for PBXNativeTarget "VCTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				CFAA59E71E263EA90032BCCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
