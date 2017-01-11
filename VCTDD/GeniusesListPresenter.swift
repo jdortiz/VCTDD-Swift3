@@ -12,4 +12,8 @@ import Foundation
 class GeniusesListPresenter {
     func viewReady() {
     }
+
+    func numberOfGeniuses() -> Int {
+        return 0
+    }
 }

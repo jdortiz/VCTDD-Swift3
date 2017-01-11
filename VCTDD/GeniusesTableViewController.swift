@@ -29,7 +29,7 @@ class GeniusesTableViewController: UITableViewController {
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
-        return 7
+        return presenter?.numberOfGeniuses() ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
